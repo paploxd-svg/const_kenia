@@ -101,27 +101,34 @@
             box-sizing: border-box;
         }
 
-        /* Tarjeta contenedora blanca para el contenido central como en la imagen */
+        /* Tarjeta contenedora con tono azul/morado para combinar con la página */
         article {
-            background-color: #ffffff;
-            color: #1a1619;
+            background-color: #28244d;
+            color: #ffffff;
             padding: 30px;
             border-radius: 8px;
             width: 80%;
             max-width: 650px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
             text-align: center;
         }
 
-        /* Estilo para la imagen dentro del artículo principal */
+        article h2 {
+            color: #ffcc00;
+        }
+
+        /* Estilo para la imagen dentro del artículo con tamaño reducido */
         .imagen-articulo {
-            max-width: 100%;
+            max-width: 40%;
             height: auto;
             border-radius: 8px;
             margin: 15px 0;
             display: block;
             margin-left: auto;
             margin-right: auto;
+            background-color: #1a1619;
+            padding: 6px;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -131,9 +138,9 @@
         <div>
             <h1 style="margin: 0; color: #ffcc00;">Mi Sitio Web</h1>
             <nav class="barra-navegacion">
-                <a href="semantica.html" class="boton-nav">YUJI ITADORI</a>
-                <a href="semantica2.html" class="boton-nav">SATORU GOJO</a>
-                <a href="semantica3.html" class="boton-nav activo">ALASTOR</a>
+                <a href="semantica.html" class="boton-nav">Blitzø</a>
+                <a href="semantica2.html" class="boton-nav">Moxxie</a>
+                <a href="semantica3.html" class="boton-nav activo">Millie</a>
 
             </nav>
         </div>
@@ -141,16 +148,16 @@
     </header>
     <main>
         <aside>
-            <h3>Barra Lateral</h3>
-            <p>Enlaces, publicidad o categorías.</p>
-            <img src="imagen/cir.jpg" alt="Alastor" class="imagen-lateral">
+            <h3>¡Gran Circo del Infierno!</h3>
+            <p>¡Ven y presenciarás las acrobacias más caóticas, fuego descontrolado y risas garantizadas! Entradas disponibles por tiempo limitado.</p>
+            <img src="imagen/cir.jpg" alt="Circo" class="imagen-lateral">
         </aside>
         <section>
             <article>
-                <h2>Artículo Principal</h2>
-                <p>Contenido del artículo...</p>
+                <h2>El Origen de Blitzø</h2>
+                <p>Blitzø comenzó su carrera como un ambicioso intérprete en el circo, pero su gran espíritu emprendedor lo llevó a fundar su propia agencia de asesinos en el Infierno (I.M.P.). A pesar de su caos interno y actitud imprudente, demuestra una profunda lealtad hacia su equipo y su hija adaptativa, Loona.</p>
                 <!-- Imagen agregada dentro del artículo principal -->
-                <img src="imagen/au.jpg" alt="Alastor" class="imagen-articulo">
+                <img src="imagen/au.jpg" alt="Blitzø" class="imagen-articulo">
             </article>
         </section>
     </main>
