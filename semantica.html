@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        body {
+            background-color: #17153b; /* Azul/violáceo oscuro sacado del fondo del logo */
+            color: #ffffff;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2b2866; /* Azul violáceo medio del fondo de la imagen */
+            padding: 10px 20px;
+        }
+
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+
+        .logo-cabecera {
+            max-width: 15%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        /* Estilos de botones acordes a la paleta de Blitzø */
+        .boton-nav {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #d32d37; /* Rojo intenso del personaje */
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: #ffcc00; /* Amarillo brillante de sus ojos */
+            color: #1a1619;            /* Texto oscuro para buen contraste */
+        }
+
+        .boton-nav.activo {
+            background-color: #e33842; /* Rojo neón para el botón activo */
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            gap: 0; /* Sin espacio directo para emular el contorno continuo */
+        }
+
+        aside {
+            width: 25%;
+            background-color: #1a1619; /* Gris/negro oscuro de su traje */
+            padding: 20px;
+            color: #ffffff;
+            text-align: center; /* Alinea los elementos al centro como en la imagen de referencia */
+            box-sizing: border-box;
+        }
+
+        .imagen-lateral {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #201d4a; /* Azul violáceo oscuro intermedio */
+            padding: 40px 20px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+
+        /* Tarjeta contenedora blanca para el contenido central como en la imagen */
+        article {
+            background-color: #ffffff;
+            color: #1a1619;
+            padding: 30px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 650px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        /* Estilo para la imagen dentro del artículo principal */
+        .imagen-articulo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0; color: #ffcc00;">Mi Sitio Web</h1>
+            <nav class="barra-navegacion">
+                <a href="semantica.html" class="boton-nav">YUJI ITADORI</a>
+                <a href="semantica2.html" class="boton-nav">SATORU GOJO</a>
+                <a href="semantica3.html" class="boton-nav activo">ALASTOR</a>
+
+            </nav>
+        </div>
+        <img src="imagen/bli.gif" alt="Logo de Mi Sitio Web" class="logo-cabecera">
+    </header>
+    <main>
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Enlaces, publicidad o categorías.</p>
+            <img src="imagen/cir.jpg" alt="Alastor" class="imagen-lateral">
+        </aside>
+        <section>
+            <article>
+                <h2>Artículo Principal</h2>
+                <p>Contenido del artículo...</p>
+                <!-- Imagen agregada dentro del artículo principal -->
+                <img src="imagen/au.jpg" alt="Alastor" class="imagen-articulo">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color: #ffcc00;">Pie de página</p>
+    </footer>
+
+</body>
+
+</html>
